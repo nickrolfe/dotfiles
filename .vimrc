@@ -146,7 +146,7 @@ map <F8> :silent !ctags -R --fields=+S --extra=+f .<cr>
 :match ExtraWhitespace /\s\+$/
 :autocmd ColorScheme * highlight ExtraWhitespace ctermbg=48 guibg=lightgreen
 
-" open the selection in Internet Explorer so it can be copied as rich text
+" open the selection in a browser so it can be copied as rich text
 function! OpenInChrome() range
     TOhtml
     w
