@@ -35,6 +35,8 @@ set ttimeout
 set ttimeoutlen=100
 set display+=lastline
 
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 if &encoding ==# 'latin1' && has('gui_running')
     set encoding=utf-8
 endif
