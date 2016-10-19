@@ -10,12 +10,18 @@ syntax on
 endif
 
 set showtabline=1
-set guifont=Menlo:h18
-
-set columns=80
-set lines=48
 
 set background=light
 colorscheme comments
 set guioptions-=T
-"hi ColorColumn guibg=bg guifg=#ff0000 gui=none
+
+if has('win32') || has('win64')
+    set guifont=Source\ Code\ Pro:h12
+    set renderoptions=type:directx
+    set guioptions-=m
+else
+    set guifont=Menlo:h18
+endif
+
+set columns=100
+set lines=48
