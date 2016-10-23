@@ -36,6 +36,7 @@ set ttimeoutlen=100
 set display+=lastline
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+set runtimepath^=~/.vim/bundle/nerdtree
 
 if &encoding ==# 'latin1' && has('gui_running')
     set encoding=utf-8
