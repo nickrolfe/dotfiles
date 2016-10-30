@@ -25,6 +25,7 @@ hi PmenuSel       guifg=fg      guibg=#222222 gui=reverse ctermfg=darkgray cterm
 hi Search         guifg=#afd7af guibg=bg      gui=reverse ctermfg=48       ctermbg=bg       cterm=reverse
 hi SpecialComment guifg=#afd7af guibg=bg      gui=NONE    ctermfg=48       ctermbg=bg       cterm=NONE
 hi Todo           guifg=#dd2222 guibg=bg      gui=NONE    ctermfg=red      ctermbg=bg       cterm=NONE
+hi MatchParen     guifg=#afd7af guibg=bg      gui=reverse ctermfg=48       ctermbg=bg       cterm=reverse
 
 hi Constant       guifg=fg      guibg=bg      gui=NONE    ctermfg=fg       ctermbg=bg       cterm=NONE
 hi Identifier     guifg=fg      guibg=bg      gui=NONE    ctermfg=fg       ctermbg=bg       cterm=NONE
