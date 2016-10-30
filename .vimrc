@@ -8,10 +8,6 @@ set ruler           " show the cursor position all the time
 set showcmd         " display incomplete commands
 set cursorline      " highlight current line
 set incsearch       " do incremental searching
-" Use <C-L> to clear the highlighting of :set hlsearch.
-if maparg('<C-L>', 'n') ==# ''
-  nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
-endif
 
 set expandtab
 set autoindent
@@ -69,6 +65,12 @@ autocmd FileType rs setlocal textwidth=78
 
 " Remap leader to comma
 let mapleader = ","
+
+" Type 'jk' while in insert mode to escape to normal mode.
+imap jk <Esc>
+
+" Use ,l to clear the highlighting of :set hlsearch.
+nnoremap <silent><leader>l :nohlsearch<cr>
 
 function! s:build()
     let &makeprg='./build.sh'
