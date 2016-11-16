@@ -58,7 +58,7 @@ autocmd FileType text setlocal textwidth=78
 autocmd FileType c setlocal textwidth=78
 autocmd FileType h setlocal textwidth=78
 autocmd FileType cpp setlocal textwidth=78
-autocmd FileType rs setlocal textwidth=78
+autocmd FileType markdown setlocal linebreak
 
 "set textwidth=78
 "autocmd FileType cfg setlocal textwidth=0
