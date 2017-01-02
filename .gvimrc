@@ -16,7 +16,7 @@ colorscheme comments
 set guioptions-=T
 
 if has('win32') || has('win64')
-    set guifont=Source\ Code\ Pro:h12
+    set guifont=Consolas:h15
     set renderoptions=type:directx
     set guioptions-=m
 else
