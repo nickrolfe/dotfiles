@@ -53,14 +53,14 @@ colorscheme commentsdark
 " Highlight column 80
 "set colorcolumn=80
 
-" For all text files set 'textwidth' to 78 characters.
-autocmd FileType text setlocal textwidth=78
-autocmd FileType c setlocal textwidth=78
-autocmd FileType h setlocal textwidth=78
-autocmd FileType cpp setlocal textwidth=78
+" For all text files set 'textwidth' to 100 characters.
+autocmd FileType text setlocal textwidth=100
+autocmd FileType c setlocal textwidth=100
+autocmd FileType h setlocal textwidth=100
+autocmd FileType cpp setlocal textwidth=100
 autocmd FileType markdown setlocal linebreak
 
-"set textwidth=78
+"set textwidth=100
 "autocmd FileType cfg setlocal textwidth=0
 
 " Remap leader to comma
