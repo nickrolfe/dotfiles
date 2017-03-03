@@ -22,6 +22,7 @@ set wrap
 set ignorecase
 set showbreak=+++\ 
 set wildmenu    " Show a menu of possible completions
+set wildmode=longest:full,full
 set scrolloff=1
 set sidescrolloff=5
 set laststatus=2
@@ -30,6 +31,7 @@ set nrformats-=octal
 set ttimeout
 set ttimeoutlen=100
 set display+=lastline
+set nobackup
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/nerdtree
@@ -72,14 +74,6 @@ imap jk <Esc>
 " Use ,l to clear the highlighting of :set hlsearch.
 nnoremap <silent><leader>l :nohlsearch<cr>
 
-function! s:build()
-    let &makeprg='./build.sh'
-    silent make!
-    copen
-endfunction
-
-command! Build call s:build()
-nnoremap <silent><leader>b :Build<cr>
 nnoremap <silent><leader>r :!cargo run<cr>
 nnoremap <silent><C-q> :cclose<cr>
 "inoremap <silent><leader>b <ESC>:Build<cr>

@@ -15,6 +15,15 @@ set cpo&vim
 augroup rust.vim
 autocmd!
 
+compiler cargo
+function! s:build()
+    silent make build
+    cwindow
+endfunction
+
+command! Build call s:build()
+nnoremap <silent><leader>b :Build<cr>
+
 " Variables {{{1
 
 " The rust source code at present seems to typically omit a leader on /*!

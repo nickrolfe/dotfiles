@@ -13,16 +13,16 @@ let g:colors_name="commentsdark"
 
 " syntax highlighting groups
 "
-hi Normal         guifg=#d2d4d5 guibg=black   gui=NONE    ctermfg=251      ctermbg=black    cterm=NONE
+hi Normal         guifg=#d2d4d5 guibg=#202022 gui=NONE    ctermfg=251      ctermbg=black    cterm=NONE
 
 hi Comment        guifg=#afd7af guibg=bg      gui=NONE    ctermfg=48       ctermbg=bg       cterm=NONE
-hi CursorLine                   guibg=#3a3a3a gui=NONE                     ctermbg=237      cterm=NONE
-hi CursorLineNr   guifg=fg      guibg=#3a3a3a gui=NONE    ctermfg=fg       ctermbg=237      cterm=NONE
+hi CursorLine                   guibg=#3a3a3d gui=NONE                     ctermbg=237      cterm=NONE
+hi CursorLineNr   guifg=fg      guibg=#3a3a3d gui=NONE    ctermfg=fg       ctermbg=237      cterm=NONE
 hi LineNr         guifg=#a2a4a5 guibg=bg      gui=NONE    ctermfg=249      ctermbg=bg       cterm=NONE
 hi NonText        guifg=#a2a4a5 guibg=bg      gui=NONE    ctermfg=249      ctermbg=bg       cterm=NONE
 hi Pmenu          guifg=fg      guibg=#222222 gui=NONE    ctermfg=darkgray ctermbg=black    cterm=NONE
 hi PmenuSel       guifg=fg      guibg=#222222 gui=reverse ctermfg=darkgray ctermbg=black    cterm=reverse
-hi Search         guifg=#afd7af guibg=bg      gui=reverse ctermfg=48       ctermbg=bg       cterm=reverse
+hi Search         guifg=#adf7af guibg=bg      gui=reverse ctermfg=48       ctermbg=bg       cterm=reverse
 hi SpecialComment guifg=#afd7af guibg=bg      gui=NONE    ctermfg=48       ctermbg=bg       cterm=NONE
 hi Todo           guifg=#dd2222 guibg=bg      gui=NONE    ctermfg=red      ctermbg=bg       cterm=NONE
 hi MatchParen     guifg=#afd7af guibg=bg      gui=reverse ctermfg=48       ctermbg=bg       cterm=reverse
@@ -37,6 +37,7 @@ hi Underlined     guifg=fg      guibg=bg      gui=NONE    ctermfg=fg       cterm
 hi Ignore         guifg=fg      guibg=bg      gui=NONE    ctermfg=fg       ctermbg=bg       cterm=NONE
 hi Error          guifg=fg      guibg=bg      gui=NONE    ctermfg=fg       ctermbg=bg       cterm=NONE
 
+hi Visual gui=reverse guibg=#202022
 
 "hi Cursor
 "hi CursorIM
@@ -59,7 +60,6 @@ hi Error          guifg=fg      guibg=bg      gui=NONE    ctermfg=fg       cterm
 "hi StatusLine
 "hi StatusLineNC
 "hi Title
-"hi Visual
 "hi VisualNOS
 "hi WarningMsg
 "hi WildMenu

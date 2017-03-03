@@ -12,11 +12,11 @@ endif
 set showtabline=1
 
 set background=light
-colorscheme comments
+colorscheme commentsdark
 set guioptions-=T
 
 if has('win32') || has('win64')
-    set guifont=Consolas:h15
+    set guifont=Ubuntu_Mono:h14
     set renderoptions=type:directx
     set guioptions-=m
 else
