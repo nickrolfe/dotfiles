@@ -16,13 +16,8 @@ augroup rust.vim
 autocmd!
 
 compiler cargo
-function! s:build()
-    silent make build
-    cwindow
-endfunction
 
-command! Build call s:build()
-nnoremap <silent><leader>b :Build<cr>
+nnoremap <silent><leader>b :RustBuild<cr>
 
 " Variables {{{1
 

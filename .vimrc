@@ -65,6 +65,12 @@ autocmd FileType markdown setlocal linebreak
 "set textwidth=100
 "autocmd FileType cfg setlocal textwidth=0
 
+function! s:rust_build()
+    silent make build
+    cwindow
+endfunction
+command! RustBuild call s:rust_build()
+
 " Remap leader to comma
 let mapleader = ","
 
