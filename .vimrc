@@ -2,6 +2,8 @@
 " Use Vim settings, rather then Vi settings (much better!).  " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+execute pathogen#infect()
+
 set backspace=indent,eol,start
 set history=50      " keep 50 lines of command line history
 set ruler           " show the cursor position all the time
@@ -33,8 +35,8 @@ set ttimeoutlen=100
 set display+=lastline
 set nobackup
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-set runtimepath^=~/.vim/bundle/nerdtree
+"set runtimepath^=~/.vim/bundle/ctrlp.vim
+"set runtimepath^=~/.vim/bundle/nerdtree
 
 if &encoding ==# 'latin1' && has('gui_running')
     set encoding=utf-8
