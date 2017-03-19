@@ -109,21 +109,7 @@ function FullscreenSplit()
     wincmd =
 endfunction
 
-function SplitColumns()
-    set columns=161
-    vsplit
-endfunction
-
-function UnsplitColumns()
-    close
-    set columns=80
-endfunction
-
 map <Leader>f :call FullscreenSplit()<cr>
-map <Leader>= :call SplitColumns()<cr>
-map <Leader>- :call UnsplitColumns()<cr>
-
-let g:ruby_path=':C:\Ruby200-x64\bin'
 
 " Helper function to allow automatic resizing with NERDTree
 function NERDTreeToggleWithSize()
