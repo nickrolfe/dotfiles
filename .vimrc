@@ -64,6 +64,9 @@ autocmd FileType h setlocal textwidth=100
 autocmd FileType cpp setlocal textwidth=100
 autocmd FileType markdown setlocal linebreak
 
+autocmd FileType ruby setlocal tabstop=2 shiftwidth=2
+autocmd FileType eruby setlocal tabstop=2 shiftwidth=2
+
 "set textwidth=100
 "autocmd FileType cfg setlocal textwidth=0
 
