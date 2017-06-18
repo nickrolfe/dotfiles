@@ -20,7 +20,7 @@ if has('win32') || has('win64')
     set renderoptions=type:directx
     set guioptions-=m
 else
-    set guifont=Menlo:h15
+    set guifont=Inconsolata-dz:h15
 endif
 
 set columns=100
