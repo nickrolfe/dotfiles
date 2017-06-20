@@ -34,6 +34,7 @@ set ttimeout
 set ttimeoutlen=100
 set display+=lastline
 set nobackup
+set noswapfile
 
 let g:airline_theme='wombat'
 
