@@ -138,11 +138,10 @@ endfunction
 " Close Vim if the only window left is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-let Tlist_WinWidth=50
-"map <F4> :TlistToggle<cr>
-map <F8> :silent !ctags -R --fields=+S --extra=+f .<cr>
- 
-" Highlight trailing spaces
+"map <F8> :silent !ctags -R --fields=+S --extra=+f .<cr>
+map <Leader>t :TagbarToggle<CR>
+
+" Highlight trailing spaces (like the one on this line) 
 :highlight ExtraWhitespace ctermbg=48 guibg=lightgreen
 ":match ExtraWhitespace /\s\+$/
 :match ExtraWhitespace /\s\+\%#\@<!$/
