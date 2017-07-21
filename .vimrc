@@ -28,12 +28,15 @@ set wildmode=longest:full,full
 set scrolloff=1
 set sidescrolloff=5
 set laststatus=2
-set showtabline=2
+set showtabline=1
 set nrformats-=octal
 set ttimeout
 set ttimeoutlen=100
 set display+=lastline
 set nobackup
+set noswapfile
+
+let g:airline_theme='wombat'
 
 "set runtimepath^=~/.vim/bundle/ctrlp.vim
 "set runtimepath^=~/.vim/bundle/nerdtree
@@ -63,6 +66,11 @@ autocmd FileType c setlocal textwidth=100
 autocmd FileType h setlocal textwidth=100
 autocmd FileType cpp setlocal textwidth=100
 autocmd FileType markdown setlocal linebreak
+
+autocmd FileType ruby setlocal tabstop=2 shiftwidth=2
+autocmd FileType eruby setlocal tabstop=2 shiftwidth=2
+autocmd FileType scss setlocal tabstop=2 shiftwidth=2
+autocmd FileType yaml setlocal tabstop=2 shiftwidth=2
 
 "set textwidth=100
 "autocmd FileType cfg setlocal textwidth=0
@@ -130,14 +138,16 @@ endfunction
 " Close Vim if the only window left is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-let Tlist_WinWidth=50
-"map <F4> :TlistToggle<cr>
-map <F8> :silent !ctags -R --fields=+S --extra=+f .<cr>
- 
-" Highlight trailing spaces
+"map <F8> :silent !ctags -R --fields=+S --extra=+f .<cr>
+map <Leader>t :TagbarToggle<CR>
+
+" Highlight trailing spaces (like the one on this line) 
 :highlight ExtraWhitespace ctermbg=48 guibg=lightgreen
-:match ExtraWhitespace /\s\+$/
+":match ExtraWhitespace /\s\+$/
+:match ExtraWhitespace /\s\+\%#\@<!$/
 :autocmd ColorScheme * highlight ExtraWhitespace ctermbg=48 guibg=lightgreen
+:au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+:au InsertLeave * match ExtraWhitespace /\s\+$/
 
 " open the selection in a browser so it can be copied as rich text
 function! OpenInChrome() range
