@@ -22,7 +22,7 @@ hi LineNr         guifg=#a2a4a5 guibg=bg      gui=NONE    ctermfg=249      cterm
 hi NonText        guifg=#a2a4a5 guibg=bg      gui=NONE    ctermfg=249      ctermbg=bg       cterm=NONE
 hi Pmenu          guifg=fg      guibg=#222222 gui=NONE    ctermfg=darkgray ctermbg=black    cterm=NONE
 hi PmenuSel       guifg=fg      guibg=#222222 gui=reverse ctermfg=darkgray ctermbg=black    cterm=reverse
-hi Search         guifg=#adf7af guibg=bg      gui=reverse ctermfg=48       ctermbg=bg       cterm=reverse
+hi Search         guifg=#adf7af guibg=#456345 gui=NONE    ctermfg=48       ctermbg=bg       cterm=reverse
 hi SpecialComment guifg=#afd7af guibg=bg      gui=NONE    ctermfg=48       ctermbg=bg       cterm=NONE
 hi Todo           guifg=#dd2222 guibg=bg      gui=NONE    ctermfg=red      ctermbg=bg       cterm=NONE
 hi MatchParen     guifg=#afd7af guibg=bg      gui=reverse ctermfg=48       ctermbg=bg       cterm=reverse
