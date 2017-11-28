@@ -36,10 +36,7 @@ set display+=lastline
 set nobackup
 set noswapfile
 
-let g:airline_theme='wombat'
-
-"set runtimepath^=~/.vim/bundle/ctrlp.vim
-"set runtimepath^=~/.vim/bundle/nerdtree
+let g:airline_theme='minimalist'
 
 if &encoding ==# 'latin1' && has('gui_running')
     set encoding=utf-8
@@ -100,6 +97,10 @@ vnoremap <silent><A-n> <ESC>:cn<cr>
 nnoremap <silent><C-A-n> :cp<cr>
 inoremap <silent><C-A-n> <ESC>:cp<cr>
 vnoremap <silent><C-A-n> <ESC>:cp<cr>
+
+" FZF shortcuts
+nnoremap <leader>o :GFiles<cr>
+nnoremap <leader>p :Files<cr>
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
