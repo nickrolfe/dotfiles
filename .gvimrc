@@ -17,7 +17,9 @@ set guioptions-=T
 
 if has('win32') || has('win64')
     set guifont=Ubuntu_Mono:h14
-    set renderoptions=type:directx
+    " Disable directx rendering, causing issues with vim-airline rendering
+    " https://github.com/vim/vim/issues/1520
+    "set renderoptions=type:directx
     set guioptions-=m
 else
     set guifont=Inconsolata-dz:h15
