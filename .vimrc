@@ -35,6 +35,7 @@ set ttimeoutlen=100
 set display+=lastline
 set nobackup
 set noswapfile
+set updatetime=250
 set wildignore=tags,*.pdb,*.exe,*.obj
 
 let g:airline_theme='minimalist'
