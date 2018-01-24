@@ -39,6 +39,7 @@ set updatetime=250
 set wildignore=tags,*.pdb,*.exe,*.obj
 
 let g:airline_theme='minimalist'
+let g:airline_extensions = ['branch']
 
 if &encoding ==# 'latin1' && has('gui_running')
     set encoding=utf-8
