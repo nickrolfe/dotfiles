@@ -37,6 +37,7 @@ set nobackup
 set noswapfile
 set updatetime=250
 set wildignore=tags,*.pdb,*.exe,*.obj
+set diffopt+=vertical
 
 let g:airline_theme='minimalist'
 let g:airline_extensions = ['branch']
