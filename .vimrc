@@ -106,6 +106,11 @@ vnoremap <silent><C-A-n> <ESC>:cp<cr>
 nnoremap <leader>o :GFiles<cr>
 nnoremap <leader>p :Files<cr>
 
+" The Silver Searcher
+if executable('ag')
+  set grepprg=ag\ --nogroup\ --nocolor
+endif
+
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
