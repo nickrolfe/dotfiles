@@ -39,6 +39,13 @@ set updatetime=250
 set wildignore=tags,*.pdb,*.exe,*.obj
 set diffopt+=vertical
 
+set undofile
+if has('win32') || has('win64')
+    set undodir=~/vimfiles/undodir
+else
+    set undodir=~/.vim/undodir
+end
+
 let g:airline_theme='minimalist'
 let g:airline_extensions = ['branch']
 
@@ -52,35 +59,21 @@ endif
 
 set formatoptions+=j " Delete comment character when joining commented lines
 
-" The Rust filetype detectino will automatically set indentation and textwidth
-" settings to conform to style conventions of the rust standard library (i.e.
-" use 4 spaces for indents and sets 'textwidth' to 99). We don't want that.
-"let g:rust_recommended_style = 0
-
 colorscheme commentsdark
 " Highlight column 80
 "set colorcolumn=80
 
-" For all text files set 'textwidth' to 100 characters.
-autocmd FileType text setlocal textwidth=100
-autocmd FileType c setlocal textwidth=100
-autocmd FileType h setlocal textwidth=100
-autocmd FileType cpp setlocal textwidth=100
+" For all text files set 'textwidth' to 80 characters.
+autocmd FileType text setlocal textwidth=80
+autocmd FileType c setlocal textwidth=80
+autocmd FileType h setlocal textwidth=80
+autocmd FileType cpp setlocal textwidth=80
 autocmd FileType markdown setlocal linebreak
 
 autocmd FileType ruby setlocal tabstop=2 shiftwidth=2
 autocmd FileType eruby setlocal tabstop=2 shiftwidth=2
 autocmd FileType scss setlocal tabstop=2 shiftwidth=2
 autocmd FileType yaml setlocal tabstop=2 shiftwidth=2
-
-"set textwidth=100
-"autocmd FileType cfg setlocal textwidth=0
-
-function! s:rust_build()
-    silent make build
-    cwindow
-endfunction
-command! RustBuild call s:rust_build()
 
 " Remap leader to comma
 let mapleader = ","
@@ -91,9 +84,7 @@ imap jk <Esc>
 " Use ,l to clear the highlighting of :set hlsearch.
 nnoremap <silent><leader>l :nohlsearch<cr>
 
-nnoremap <silent><leader>r :!cargo run<cr>
 nnoremap <silent><C-q> :cclose<cr>
-"inoremap <silent><leader>b <ESC>:Build<cr>
 inoremap <silent><C-q> <ESC>:cclose<cr>
 nnoremap <silent><A-n> :cn<cr>
 inoremap <silent><A-n> <ESC>:cn<cr>
@@ -166,5 +157,3 @@ function! OpenInChrome() range
     silent !start "C:\Users\Nick\AppData\Local\Google\Chrome\Application\chrome.exe" "%:p"
 endfunction
 noremap <F7> :call OpenInChrome()<CR>
-
-
