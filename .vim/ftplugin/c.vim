@@ -7,7 +7,7 @@ else
 end
 
 function! s:build()
-    silent make!
+    make!
     cwindow
 endfunction
 
