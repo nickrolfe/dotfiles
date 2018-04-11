@@ -70,11 +70,6 @@ autocmd FileType h setlocal textwidth=80
 autocmd FileType cpp setlocal textwidth=80
 autocmd FileType markdown setlocal linebreak
 
-autocmd FileType ruby setlocal tabstop=2 shiftwidth=2
-autocmd FileType eruby setlocal tabstop=2 shiftwidth=2
-autocmd FileType scss setlocal tabstop=2 shiftwidth=2
-autocmd FileType yaml setlocal tabstop=2 shiftwidth=2
-
 " Remap leader to comma
 let mapleader = ","
 
