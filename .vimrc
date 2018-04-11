@@ -138,10 +138,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 map <Leader>t :TagbarToggle<CR>
 
 " Highlight trailing spaces (like the one on this line) 
-:highlight ExtraWhitespace ctermbg=48 guibg=lightgreen
+:highlight ExtraWhitespace ctermbg=48 guibg=#ff0087
 ":match ExtraWhitespace /\s\+$/
 :match ExtraWhitespace /\s\+\%#\@<!$/
-:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=48 guibg=lightgreen
+:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=48 guibg=#ff0087
 :au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 :au InsertLeave * match ExtraWhitespace /\s\+$/
 
