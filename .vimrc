@@ -79,14 +79,9 @@ imap jk <Esc>
 " Use ,l to clear the highlighting of :set hlsearch.
 nnoremap <silent><leader>l :nohlsearch<cr>
 
-nnoremap <silent><C-q> :cclose<cr>
-inoremap <silent><C-q> <ESC>:cclose<cr>
-nnoremap <silent><A-n> :cn<cr>
-inoremap <silent><A-n> <ESC>:cn<cr>
-vnoremap <silent><A-n> <ESC>:cn<cr>
-nnoremap <silent><C-A-n> :cp<cr>
-inoremap <silent><C-A-n> <ESC>:cp<cr>
-vnoremap <silent><C-A-n> <ESC>:cp<cr>
+nnoremap <silent><leader>q :cclose<cr>
+nnoremap <silent><leader>n :cnext<cr>
+nnoremap <silent><leader>N :cprevious<cr>
 
 " FZF shortcuts
 nnoremap <leader>o :GFiles<cr>
