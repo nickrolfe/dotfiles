@@ -38,6 +38,7 @@ set noswapfile
 set updatetime=250
 set wildignore=tags,*.pdb,*.exe,*.obj
 set diffopt+=vertical
+set fileformats=unix,dos
 
 set undofile
 if has('win32') || has('win64')
