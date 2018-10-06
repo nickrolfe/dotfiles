@@ -34,27 +34,27 @@ endif
 "
 exe "hi Normal         guifg=#d2d4d5 guibg=#202022 gui=NONE    ctermfg=" .s:text ."     ctermbg=black    cterm=NONE"
 
-exe "hi Comment        guifg=#00ff87 guibg=bg      gui=NONE    ctermfg=" .s:highlight ."       ctermbg=bg       cterm=NONE"
+exe "hi Comment        guifg=#00ff87 guibg=bg      gui=NONE    ctermfg=" .s:highlight ."                        cterm=NONE"
 exe "hi CursorLine                   guibg=#3a3a3d gui=NONE                     ctermbg=" .s:cursor_line ."      cterm=NONE"
 exe "hi CursorLineNr   guifg=fg      guibg=#3a3a3d gui=NONE    ctermfg=fg       ctermbg=" .s:cursor_line ."      cterm=NONE"
-exe "hi LineNr         guifg=#a2a4a5 guibg=bg      gui=NONE    ctermfg=" .s:nontext ."      ctermbg=bg       cterm=NONE"
-exe "hi NonText        guifg=#a2a4a5 guibg=bg      gui=NONE    ctermfg=" .s:nontext ."      ctermbg=bg       cterm=NONE"
+exe "hi LineNr         guifg=#a2a4a5 guibg=bg      gui=NONE    ctermfg=" .s:nontext ."                       cterm=NONE"
+exe "hi NonText        guifg=#a2a4a5 guibg=bg      gui=NONE    ctermfg=" .s:nontext ."                       cterm=NONE"
 exe "hi Pmenu          guifg=fg      guibg=#222222 gui=NONE    ctermfg=" .s:pmenu_fg ." ctermbg=" .s:pmenu_bg ." cterm=NONE"
 exe "hi PmenuSel       guifg=fg      guibg=#222222 gui=reverse ctermfg=" .s:pmenu_sel_fg ." ctermbg=" . s:pmenu_sel_bg ."    cterm=NONE"
 exe "hi Search         guifg=#adf7af guibg=#456345 gui=NONE    ctermfg=bg ctermbg=" .s:highlight ." cterm=NONE"
-exe "hi SpecialComment guifg=#00ff87 guibg=bg      gui=NONE    ctermfg=" .s:highlight ."       ctermbg=bg       cterm=NONE"
-hi Todo           guifg=#dd2222 guibg=bg      gui=NONE    ctermfg=red      ctermbg=bg       cterm=NONE
-exe "hi MatchParen     guifg=#00ff87 guibg=#456345 gui=NONE    ctermfg=" .s:highlight ."       ctermbg=bg       cterm=NONE"
+exe "hi SpecialComment guifg=#00ff87 guibg=bg      gui=NONE    ctermfg=" .s:highlight ."                        cterm=NONE"
+hi Todo           guifg=#dd2222 guibg=bg      gui=NONE    ctermfg=red                       cterm=NONE
+exe "hi MatchParen     guifg=#00ff87 guibg=#456345 gui=NONE    ctermfg=" .s:highlight ."                        cterm=NONE"
 
-hi Constant       guifg=fg      guibg=bg      gui=NONE    ctermfg=fg       ctermbg=bg       cterm=NONE
-hi Identifier     guifg=fg      guibg=bg      gui=NONE    ctermfg=fg       ctermbg=bg       cterm=NONE
-hi Statement      guifg=fg      guibg=bg      gui=NONE    ctermfg=fg       ctermbg=bg       cterm=NONE
-hi PreProc        guifg=fg      guibg=bg      gui=NONE    ctermfg=fg       ctermbg=bg       cterm=NONE
-hi Type           guifg=fg      guibg=bg      gui=NONE    ctermfg=fg       ctermbg=bg       cterm=NONE
-hi Special        guifg=fg      guibg=bg      gui=NONE    ctermfg=fg       ctermbg=bg       cterm=NONE
-hi Underlined     guifg=fg      guibg=bg      gui=NONE    ctermfg=fg       ctermbg=bg       cterm=NONE
-hi Ignore         guifg=fg      guibg=bg      gui=NONE    ctermfg=fg       ctermbg=bg       cterm=NONE
-hi Error          guifg=fg      guibg=bg      gui=NONE    ctermfg=fg       ctermbg=bg       cterm=NONE
+hi Constant       guifg=fg      guibg=bg      gui=NONE    ctermfg=fg                        cterm=NONE
+hi Identifier     guifg=fg      guibg=bg      gui=NONE    ctermfg=fg                        cterm=NONE
+hi Statement      guifg=fg      guibg=bg      gui=NONE    ctermfg=fg                        cterm=NONE
+hi PreProc        guifg=fg      guibg=bg      gui=NONE    ctermfg=fg                        cterm=NONE
+hi Type           guifg=fg      guibg=bg      gui=NONE    ctermfg=fg                        cterm=NONE
+hi Special        guifg=fg      guibg=bg      gui=NONE    ctermfg=fg                        cterm=NONE
+hi Underlined     guifg=fg      guibg=bg      gui=NONE    ctermfg=fg                        cterm=NONE
+hi Ignore         guifg=fg      guibg=bg      gui=NONE    ctermfg=fg                        cterm=NONE
+hi Error          guifg=fg      guibg=bg      gui=NONE    ctermfg=fg                        cterm=NONE
 
 hi Visual gui=reverse guibg=#202022
 
