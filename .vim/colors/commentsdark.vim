@@ -13,7 +13,7 @@ let g:colors_name="commentsdark"
 
 if (&t_Co == 256)
   let s:text = "251"
-  let s:highlight = "48"
+  let s:highlight = "197"
   let s:cursor_line = "237"
   let s:pmenu_fg = "251"
   let s:pmenu_bg = "237"
