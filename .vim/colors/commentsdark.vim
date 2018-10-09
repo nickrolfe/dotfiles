@@ -34,17 +34,17 @@ endif
 "
 exe "hi Normal         guifg=#d2d4d5 guibg=#202022 gui=NONE    ctermfg=" .s:text ."     ctermbg=black    cterm=NONE"
 
-exe "hi Comment        guifg=#00ff87 guibg=bg      gui=NONE    ctermfg=" .s:highlight ."                        cterm=NONE"
+exe "hi Comment        guifg=#ff005f guibg=bg      gui=NONE    ctermfg=" .s:highlight ."                        cterm=NONE"
 exe "hi CursorLine                   guibg=#3a3a3d gui=NONE                     ctermbg=" .s:cursor_line ."      cterm=NONE"
 exe "hi CursorLineNr   guifg=fg      guibg=#3a3a3d gui=NONE    ctermfg=fg       ctermbg=" .s:cursor_line ."      cterm=NONE"
 exe "hi LineNr         guifg=#a2a4a5 guibg=bg      gui=NONE    ctermfg=" .s:nontext ."                       cterm=NONE"
 exe "hi NonText        guifg=#a2a4a5 guibg=bg      gui=NONE    ctermfg=" .s:nontext ."                       cterm=NONE"
 exe "hi Pmenu          guifg=fg      guibg=#222222 gui=NONE    ctermfg=" .s:pmenu_fg ." ctermbg=" .s:pmenu_bg ." cterm=NONE"
 exe "hi PmenuSel       guifg=fg      guibg=#222222 gui=reverse ctermfg=" .s:pmenu_sel_fg ." ctermbg=" . s:pmenu_sel_bg ."    cterm=NONE"
-exe "hi Search         guifg=#adf7af guibg=#456345 gui=NONE    ctermfg=bg ctermbg=" .s:highlight ." cterm=NONE"
-exe "hi SpecialComment guifg=#00ff87 guibg=bg      gui=NONE    ctermfg=" .s:highlight ."                        cterm=NONE"
-hi Todo           guifg=#dd2222 guibg=bg      gui=NONE    ctermfg=red                       cterm=NONE
-exe "hi MatchParen     guifg=#00ff87 guibg=#456345 gui=NONE    ctermfg=" .s:highlight ."                        cterm=NONE"
+exe "hi Search         guifg=#ffff5f guibg=#656545 gui=NONE    ctermfg=bg ctermbg=" .s:highlight ." cterm=NONE"
+exe "hi SpecialComment guifg=#ff005f guibg=bg      gui=NONE    ctermfg=" .s:highlight ."                        cterm=NONE"
+hi Todo           guifg=#ff005f guibg=bg      gui=reverse ctermfg=red                       cterm=NONE
+exe "hi MatchParen     guifg=#ff005f guibg=bg gui=reverse ctermfg=" .s:highlight ."                        cterm=NONE"
 
 hi Constant       guifg=fg      guibg=bg      gui=NONE    ctermfg=fg                        cterm=NONE
 hi Identifier     guifg=fg      guibg=bg      gui=NONE    ctermfg=fg                        cterm=NONE
