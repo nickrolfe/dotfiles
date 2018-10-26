@@ -61,8 +61,6 @@ endif
 set formatoptions+=j " Delete comment character when joining commented lines
 
 colorscheme commentsdark
-" Highlight column 80
-"set colorcolumn=80
 
 " For all text files set 'textwidth' to 80 characters.
 autocmd FileType text setlocal textwidth=80
@@ -111,25 +109,6 @@ endfunction
 
 map <Leader>f :call FullscreenSplit()<cr>
 
-" Helper function to allow automatic resizing with NERDTree
-function NERDTreeToggleWithSize()
-    if !exists("g:NERDTreeIsOpen")
-        let g:NERDTreeIsOpen = 1
-        let &columns=&columns + g:NERDTreeWinSize + 1
-        NERDTreeToggle
-    else
-        unlet g:NERDTreeIsOpen
-        NERDTreeToggle
-        let &columns=&columns - g:NERDTreeWinSize - 1
-    end
-endfunction
-
-" Now map NERDTree to comma comma
-"map <Leader>, :call NERDTreeToggleWithSize()<cr>
-
-" Close Vim if the only window left is NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
 "map <F8> :silent !ctags -R --fields=+S --extra=+f .<cr>
 map <Leader>t :TagbarToggle<CR>
 
@@ -140,11 +119,3 @@ map <Leader>t :TagbarToggle<CR>
 :autocmd ColorScheme * highlight ExtraWhitespace ctermbg=48 guibg=#ff0087
 :au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 :au InsertLeave * match ExtraWhitespace /\s\+$/
-
-" open the selection in a browser so it can be copied as rich text
-function! OpenInChrome() range
-    TOhtml
-    w
-    silent !start "C:\Users\Nick\AppData\Local\Google\Chrome\Application\chrome.exe" "%:p"
-endfunction
-noremap <F7> :call OpenInChrome()<CR>
