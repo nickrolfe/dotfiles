@@ -1,13 +1,12 @@
-
-" Use Vim settings, rather then Vi settings (much better!).  " This must be first, because it changes other options as a side effect.
 set nocompatible
-
 
 set backspace=indent,eol,start
 set history=50      " keep 50 lines of command line history
 set ruler           " show the cursor position all the time
 set showcmd         " display incomplete commands
-set cursorline      " highlight current line
+if has('gui_running')
+    set cursorline      " highlight current line
+endif
 set incsearch       " do incremental searching
 
 set expandtab
@@ -17,10 +16,10 @@ filetype plugin indent on
 set tabstop=4
 set smarttab
 set shiftwidth=4
-syntax on
 set hlsearch
 set wrap
 set ignorecase
+set smartcase
 set showbreak=+++\ 
 set wildmenu    " Show a menu of possible completions
 set wildmode=longest:full,full
@@ -38,6 +37,12 @@ set updatetime=250
 set wildignore=tags,*.pdb,*.exe,*.obj
 set diffopt+=vertical
 set fileformats=unix,dos
+set title
+
+if (has("termguicolors"))
+   set termguicolors
+endif
+syntax on
 
 " Some customizations for work machines compared with my personal preferences
 if !empty($VIM_WORK_STYLE)
@@ -59,9 +64,9 @@ if &encoding ==# 'latin1' && has('gui_running')
     set encoding=utf-8
 endif
 
-if &listchars ==# 'eol:$'
-  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
-endif
+set list
+set listchars=tab:▸\ 
+" here's a tab: 	.
 
 set formatoptions+=j " Delete comment character when joining commented lines
 
@@ -74,6 +79,7 @@ autocmd FileType h setlocal textwidth=80
 autocmd FileType cpp setlocal textwidth=80
 autocmd FileType markdown setlocal linebreak
 
+" How to read/write brotli-compressed files
 autocmd BufReadPre,FileReadPre     *.br setlocal bin
 autocmd BufReadPost,FileReadPost   *.br call gzip#read("brotli -d --rm")
 autocmd BufWritePost,FileWritePost *.br call gzip#write("brotli -5 --rm")
@@ -112,21 +118,15 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-function FullscreenSplit()
-    simalt ~x
-    vnew
-    wincmd =
-endfunction
+" create a vsplit and move to it
+nnoremap <leader>w <C-w>v<C-w>l
 
-map <Leader>f :call FullscreenSplit()<cr>
-
-"map <F8> :silent !ctags -R --fields=+S --extra=+f .<cr>
 map <Leader>t :TagbarToggle<CR>
 
 " Highlight trailing spaces (like the one on this line) 
-:highlight ExtraWhitespace ctermbg=48 guibg=#ff0087
+:highlight ExtraWhitespace ctermbg=18 guibg=#ff0087
 ":match ExtraWhitespace /\s\+$/
 :match ExtraWhitespace /\s\+\%#\@<!$/
-:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=48 guibg=#ff0087
+:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=18 guibg=#ff0087
 :au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 :au InsertLeave * match ExtraWhitespace /\s\+$/
