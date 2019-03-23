@@ -2,7 +2,6 @@
 " Use Vim settings, rather then Vi settings (much better!).  " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-execute pathogen#infect()
 
 set backspace=indent,eol,start
 set history=50      " keep 50 lines of command line history

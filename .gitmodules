@@ -1,24 +1,24 @@
 [submodule ".vim/bundle/fzf"]
-	path = .vim/bundle/fzf
+	path = .vim/pack/submodules/start/fzf
 	url = https://github.com/junegunn/fzf.git
 [submodule ".vim/bundle/fzf.vim"]
-	path = .vim/bundle/fzf.vim
+	path = .vim/pack/submodules/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
 [submodule ".vim/bundle/vim-airline"]
-	path = .vim/bundle/vim-airline
+	path = .vim/pack/submodules/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
 [submodule ".vim/bundle/vim-airline-themes"]
-	path = .vim/bundle/vim-airline-themes
+	path = .vim/pack/submodules/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
 [submodule ".vim/bundle/tagbar"]
-	path = .vim/bundle/tagbar
+	path = .vim/pack/submodules/start/tagbar
 	url = https://github.com/majutsushi/tagbar.git
 [submodule ".vim/bundle/vim-fugitive"]
-	path = .vim/bundle/vim-fugitive
+	path = .vim/pack/submodules/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule ".vim/bundle/vim-surround"]
-	path = .vim/bundle/vim-surround
+	path = .vim/pack/submodules/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
 [submodule ".vim/bundle/gv.vim"]
-	path = .vim/bundle/gv.vim
+	path = .vim/pack/submodules/start/gv.vim
 	url = https://github.com/junegunn/gv.vim.git
