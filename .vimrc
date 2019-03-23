@@ -39,6 +39,12 @@ set wildignore=tags,*.pdb,*.exe,*.obj
 set diffopt+=vertical
 set fileformats=unix,dos
 
+" Some customizations for work machines compared with my personal preferences
+if !empty($VIM_WORK_STYLE)
+    set shiftwidth=2
+    set tabstop=2
+endif
+
 set undofile
 if has('win32') || has('win64')
     set undodir=~/vimfiles/undodir
