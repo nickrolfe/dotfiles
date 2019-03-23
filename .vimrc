@@ -4,9 +4,7 @@ set backspace=indent,eol,start
 set history=50      " keep 50 lines of command line history
 set ruler           " show the cursor position all the time
 set showcmd         " display incomplete commands
-if has('gui_running')
-    set cursorline      " highlight current line
-endif
+set cursorline      " highlight current line
 set incsearch       " do incremental searching
 
 set expandtab
@@ -37,7 +35,6 @@ set updatetime=250
 set wildignore=tags,*.pdb,*.exe,*.obj
 set diffopt+=vertical
 set fileformats=unix,dos
-set title
 
 if (has("termguicolors"))
    set termguicolors
@@ -130,3 +127,5 @@ map <Leader>t :TagbarToggle<CR>
 :autocmd ColorScheme * highlight ExtraWhitespace ctermbg=18 guibg=#ff0087
 :au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 :au InsertLeave * match ExtraWhitespace /\s\+$/
+
+let g:rustfmt_autosave = 1
