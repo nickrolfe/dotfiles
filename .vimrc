@@ -68,6 +68,12 @@ autocmd FileType h setlocal textwidth=80
 autocmd FileType cpp setlocal textwidth=80
 autocmd FileType markdown setlocal linebreak
 
+autocmd BufReadPre,FileReadPre     *.br setlocal bin
+autocmd BufReadPost,FileReadPost   *.br call gzip#read("brotli -d --rm")
+autocmd BufWritePost,FileWritePost *.br call gzip#write("brotli -5 --rm")
+autocmd FileAppendPre              *.br call gzip#appre("brotli -d --rm")
+autocmd FileAppendPost             *.br call gzip#write("brotli -5 --rm")
+
 " Remap leader to comma
 let mapleader = ","
 
