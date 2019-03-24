@@ -25,3 +25,6 @@
 [submodule ".vim/pack/submodules/start/rust.vim"]
 	path = .vim/pack/submodules/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
+[submodule ".vim/pack/submodules/start/nord-vim"]
+	path = .vim/pack/submodules/start/nord-vim
+	url = https://github.com/arcticicestudio/nord-vim.git

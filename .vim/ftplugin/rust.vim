@@ -14,3 +14,6 @@ command! CargoRun call s:cargo_run()
 
 nnoremap <silent><leader>b :CargoBuild<cr>
 nnoremap <silent><leader>r :CargoRun<cr>
+
+colorscheme nord
+AirlineTheme nord
