@@ -99,6 +99,7 @@ nnoremap <silent><leader>N :cprevious<cr>
 " FZF shortcuts
 nnoremap <leader>o :GFiles<cr>
 nnoremap <leader>p :Files<cr>
+nnoremap <leader>u :Buffers<cr>
 
 " The Silver Searcher
 if executable('ag')
