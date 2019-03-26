@@ -64,7 +64,7 @@ if &encoding ==# 'latin1' && has('gui_running')
 endif
 
 set list
-set listchars=tab:_\ 
+set listchars=tab:>\ 
 " here's a tab: 	.
 
 set formatoptions+=j " Delete comment character when joining commented lines
