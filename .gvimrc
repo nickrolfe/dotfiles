@@ -15,6 +15,8 @@ set background=light
 colorscheme commentsdark
 set guioptions-=T
 
+set listchars=tab:→\ 
+
 if has('win32') || has('win64')
     set guifont=Input:h12
     " Disable directx rendering, causing issues with vim-airline rendering

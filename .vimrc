@@ -4,7 +4,9 @@ set backspace=indent,eol,start
 set history=50      " keep 50 lines of command line history
 set ruler           " show the cursor position all the time
 set showcmd         " display incomplete commands
-set cursorline      " highlight current line
+if has('gui_running')
+    set cursorline  " highlight current line
+endif
 set incsearch       " do incremental searching
 
 set expandtab
@@ -62,7 +64,7 @@ if &encoding ==# 'latin1' && has('gui_running')
 endif
 
 set list
-set listchars=tab:▸\ 
+set listchars=tab:_\ 
 " here's a tab: 	.
 
 set formatoptions+=j " Delete comment character when joining commented lines
