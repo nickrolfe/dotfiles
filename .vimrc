@@ -46,7 +46,7 @@ syntax on
 " Some customizations for work machines compared with my personal preferences
 if !empty($VIM_WORK_STYLE)
     set shiftwidth=2
-    set tabstop=2
+    set tabstop=8
 endif
 
 set undofile

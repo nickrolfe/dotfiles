@@ -39,6 +39,7 @@ exe "hi CursorLine                   guibg=#3a3a3d gui=NONE                     
 exe "hi CursorLineNr   guifg=fg      guibg=#3a3a3d gui=NONE    ctermfg=fg       ctermbg=" .s:cursor_line ."      cterm=NONE"
 exe "hi LineNr         guifg=#a2a4a5 guibg=bg      gui=NONE    ctermfg=" .s:nontext ."                       cterm=NONE"
 exe "hi NonText        guifg=#a2a4a5 guibg=bg      gui=NONE    ctermfg=" .s:nontext ."                       cterm=NONE"
+exe "hi SpecialKey     guifg=#a2a4a5 guibg=bg      gui=NONE    ctermfg=" .s:nontext ."                       cterm=NONE"
 exe "hi Pmenu          guifg=fg      guibg=#222222 gui=NONE    ctermfg=" .s:pmenu_fg ." ctermbg=" .s:pmenu_bg ." cterm=NONE"
 exe "hi PmenuSel       guifg=fg      guibg=#222222 gui=reverse ctermfg=" .s:pmenu_sel_fg ." ctermbg=" . s:pmenu_sel_bg ."    cterm=NONE"
 exe "hi Search         guifg=#ffff5f guibg=#656545 gui=NONE    ctermfg=bg ctermbg=" .s:highlight ." cterm=NONE"
@@ -75,7 +76,6 @@ hi Visual gui=reverse guibg=#202022
 "hi MoreMsg
 "hi NonText
 "hi Question
-"hi SpecialKey
 "hi StatusLine
 "hi StatusLineNC
 "hi Title
