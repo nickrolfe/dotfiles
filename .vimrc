@@ -103,10 +103,11 @@ nnoremap <leader>o :GFiles<cr>
 nnoremap <leader>p :Files<cr>
 nnoremap <leader>u :Buffers<cr>
 
+set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
 " The Silver Searcher
-if executable('ag')
-  set grepprg=ag\ --nogroup\ --nocolor
-endif
+"if executable('ag')
+"  set grepprg=ag\ --nogroup\ --nocolor
+"endif
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow

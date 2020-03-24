@@ -12,13 +12,14 @@ endif
 set showtabline=1
 
 set background=light
-colorscheme commentsdark
+"colorscheme commentsdark
+colorscheme nord
 set guioptions-=T
 
 set listchars=tab:→\ 
 
 if has('win32') || has('win64')
-    set guifont=Input:h12
+    set guifont=Cascadia_Code:h12
     " Disable directx rendering, causing issues with vim-airline rendering
     " https://github.com/vim/vim/issues/1520
     "set renderoptions=type:directx
