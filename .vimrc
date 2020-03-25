@@ -56,7 +56,7 @@ else
     set undodir=~/.vim/undodir
 end
 
-let g:airline_theme='minimalist'
+let g:airline_theme='nord'
 let g:airline_extensions = ['branch']
 
 if &encoding ==# 'latin1' && has('gui_running')
@@ -69,7 +69,7 @@ set listchars=tab:>\
 
 set formatoptions+=j " Delete comment character when joining commented lines
 
-colorscheme commentsdark
+colorscheme nord
 
 " For all text files set 'textwidth' to 80 characters.
 autocmd FileType text setlocal textwidth=80
