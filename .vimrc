@@ -37,6 +37,7 @@ set updatetime=250
 set wildignore=tags,*.pdb,*.exe,*.obj
 set diffopt+=vertical
 set fileformats=unix,dos
+set lazyredraw
 
 if (has("termguicolors"))
    set termguicolors
