@@ -14,9 +14,21 @@ set showtabline=1
 set background=light
 "colorscheme commentsdark
 colorscheme nord
+
+" no toolbar
 set guioptions-=T
 
 set listchars=tab:→\ 
+
+if has('win32') || has('win64')
+  " in visual mode, Ctrl-X should not cut text but do the standard subtract
+  " command
+  vunmap <C-X>
+
+  " execute commands in terminal
+  set guioptions+=!
+end
+
 
 if has('win32') || has('win64')
     set guifont=Cascadia_Code:h12
