@@ -136,3 +136,5 @@ map <Leader>t :TagbarToggle<CR>
 :au InsertLeave * match ExtraWhitespace /\s\+$/
 
 let g:rustfmt_autosave = 1
+
+set background&
